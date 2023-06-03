@@ -1,0 +1,1 @@
+python /home/ikalvet/git/rf_diffusion_branches/aa/rf_diffusion/run_inference.py --config-dir=/home/lhtran/class/cheme_577/challenge_4/unrelated/ --config-name=test.yaml

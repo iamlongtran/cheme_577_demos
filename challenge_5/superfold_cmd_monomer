@@ -1,0 +1,1 @@
+/software/lab/superfold/superfold /home/lhtran/class/cheme_577/challenge_5/5tje_trim.pdb --models all --version monomer --type monomer_ptm --max_recycles 5 --recycle_tol 0 --seed_start 0 --nstruct 1 --out_dir /home/lhtran/class/cheme_577/challenge_5/output_monomer_ptm/ --output_pae --output_summary --simple_rmsd --initial_guess

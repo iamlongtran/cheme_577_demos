@@ -1,0 +1,70 @@
+ERROR: a conda environment is active. This could interfere with the execution of this script. Please deactivate the current conda environment and try again.
+running on digs
+2023-06-01 11:03:34.806112: E external/org_tensorflow/tensorflow/stream_executor/cuda/cuda_driver.cc:271] failed call to cuInit: CUDA_ERROR_NO_DEVICE: no CUDA-capable device is detected
+WARNING:absl:No GPU/TPU found, falling back to CPU. (Set TF_CPP_MIN_LOG_LEVEL=0 and rerun for more info.)
+Warning: use "from pymol import cmd" instead of "import cmd"
+using  cpu
+Traceback (most recent call last):
+  File "/net/software/lab/superfold/pyroml/lib/python3.8/site-packages/ml_collections/config_dict/config_dict.py", line 883, in __getitem__
+    field = self._fields[key]
+KeyError: 'masked_msa'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/net/software/lab/superfold/pyroml/lib/python3.8/site-packages/ml_collections/config_dict/config_dict.py", line 807, in __getattr__
+    return self[attribute]
+  File "/net/software/lab/superfold/pyroml/lib/python3.8/site-packages/ml_collections/config_dict/config_dict.py", line 889, in __getitem__
+    raise KeyError(self._generate_did_you_mean_message(key, str(e)))
+KeyError: "'masked_msa'"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/net/software/lab/superfold/run_superfold.py", line 857, in <module>
+    cfg.model.embeddings_and_evoformer.masked_msa.replace_fraction = args.pct_seq_mask
+  File "/net/software/lab/superfold/pyroml/lib/python3.8/site-packages/ml_collections/config_dict/config_dict.py", line 809, in __getattr__
+    raise AttributeError(e)
+AttributeError: "'masked_msa'"
+running on digs
+  0%|          | 0/1 [00:00<?, ?it/s]Input: 5tje_trim:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+Running model_1_ptm_seed_0:   0%|          | 0/5 [00:03<?, ?it/s][AERROR: a conda environment is active. This could interfere with the execution of this script. Please deactivate the current conda environment and try again.
+running on digs
+  0%|          | 0/1 [00:00<?, ?it/s]Input: 5tje_trim:   0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/5 [00:00<?, ?it/s][A
+Running model_1_multimer_v2_seed_0:   0%|          | 0/5 [00:00<?, ?it/s][A
+Running model_1_ptm_seed_0:  20%|██        | 1/5 [04:29<17:59, 269.89s/it][A
+Running model_2_ptm_seed_0:  20%|██        | 1/5 [04:35<17:59, 269.89s/it][A
+Running model_2_ptm_seed_0:  40%|████      | 2/5 [06:22<08:52, 177.64s/it][A
+Running model_3_ptm_seed_0:  40%|████      | 2/5 [06:26<08:52, 177.64s/it][A
+Running model_1_multimer_v2_seed_0:  20%|██        | 1/5 [04:45<19:03, 285.75s/it][A
+Running model_2_multimer_v2_seed_0:  20%|██        | 1/5 [04:48<19:03, 285.75s/it][A
+Running model_3_ptm_seed_0:  60%|██████    | 3/5 [08:13<04:54, 147.09s/it][A
+Running model_4_ptm_seed_0:  60%|██████    | 3/5 [08:16<04:54, 147.09s/it][A
+Running model_4_ptm_seed_0:  80%|████████  | 4/5 [10:04<02:12, 132.69s/it][A
+Running model_5_ptm_seed_0:  80%|████████  | 4/5 [10:07<02:12, 132.69s/it][A
+Running model_5_ptm_seed_0: 100%|██████████| 5/5 [11:54<00:00, 124.71s/it][ARunning model_5_ptm_seed_0: 100%|██████████| 5/5 [11:57<00:00, 143.55s/it]
+Input: 5tje_trim: 100%|██████████| 1/1 [11:58<00:00, 718.03s/it]Input: 5tje_trim: 100%|██████████| 1/1 [11:58<00:00, 718.03s/it]
+Warning: use "from pymol import cmd" instead of "import cmd"
+using  gpu
+5tje_trim model_1_ptm_seed_0 recycles:5 tol:2.63 mean_plddt:36.58 pTMscore:0.36 rmsd_to_input:24.24 elapsed time (s): 282.1125705242157
+5tje_trim model_2_ptm_seed_0 recycles:5 tol:3.66 mean_plddt:40.09 pTMscore:0.22 rmsd_to_input:21.11 elapsed time (s): 110.25078320503235
+5tje_trim model_3_ptm_seed_0 recycles:5 tol:2.26 mean_plddt:27.43 pTMscore:0.19 rmsd_to_input:20.10 elapsed time (s): 110.17375206947327
+5tje_trim model_4_ptm_seed_0 recycles:5 tol:2.97 mean_plddt:31.32 pTMscore:0.17 rmsd_to_input:19.87 elapsed time (s): 110.36095881462097
+5tje_trim model_5_ptm_seed_0 recycles:5 tol:2.89 mean_plddt:31.09 pTMscore:0.20 rmsd_to_input:23.63 elapsed time (s): 110.33428430557251
+
+Running model_3_multimer_v2_seed_0:  60%|██████    | 3/5 [09:43<05:58, 179.40s/it][A
+Running model_4_multimer_v2_seed_0:  60%|██████    | 3/5 [09:45<05:58, 179.40s/it][A
+Running model_4_multimer_v2_seed_0:  80%|████████  | 4/5 [12:12<02:47, 167.45s/it][A
+Running model_5_multimer_v2_seed_0:  80%|████████  | 4/5 [12:14<02:47, 167.45s/it][A
+Running model_5_multimer_v2_seed_0: 100%|██████████| 5/5 [14:41<00:00, 160.73s/it][ARunning model_5_multimer_v2_seed_0: 100%|██████████| 5/5 [14:43<00:00, 176.68s/it]
+Input: 5tje_trim: 100%|██████████| 1/1 [14:43<00:00, 883.69s/it]Input: 5tje_trim: 100%|██████████| 1/1 [14:43<00:00, 883.69s/it]
+Warning: use "from pymol import cmd" instead of "import cmd"
+using  gpu
+Warning: padding sequences in multimer mode is not implemented yet
+5tje_trim model_1_multimer_v2_seed_0 recycles:5 tol:5.15 mean_plddt:36.66 pTMscore:0.17 rmsd_to_input:40.91 elapsed time (s): 295.2979781627655
+5tje_trim model_2_multimer_v2_seed_0 recycles:5 tol:7.01 mean_plddt:33.94 pTMscore:0.17 rmsd_to_input:36.57 elapsed time (s): 148.69432616233826
+5tje_trim model_3_multimer_v2_seed_0 recycles:5 tol:7.83 mean_plddt:45.20 pTMscore:0.24 rmsd_to_input:41.93 elapsed time (s): 148.84318089485168
+5tje_trim model_4_multimer_v2_seed_0 recycles:5 tol:3.33 mean_plddt:35.73 pTMscore:0.18 rmsd_to_input:37.98 elapsed time (s): 148.86900734901428
+5tje_trim model_5_multimer_v2_seed_0 recycles:5 tol:6.68 mean_plddt:34.11 pTMscore:0.14 rmsd_to_input:57.90 elapsed time (s): 148.85451436042786

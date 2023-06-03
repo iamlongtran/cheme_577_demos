@@ -1,0 +1,1 @@
+/software/mlfold/mlfold.py --pdb-file {pdb} --af2-models 1 2 3 4 5

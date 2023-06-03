@@ -1,0 +1,4 @@
+5tje_trim model_1_multimer_v2_seed_0 recycles:5 tol:4.46 mean_plddt:36.09 pTMscore:0.17 rmsd_to_input:41.23 elapsed time (s): 4074.2741119861603
+5tje_trim model_2_multimer_v2_seed_0 recycles:5 tol:7.09 mean_plddt:33.83 pTMscore:0.17 rmsd_to_input:36.66 elapsed time (s): 3676.2981309890747
+5tje_trim model_3_multimer_v2_seed_0 recycles:5 tol:8.24 mean_plddt:45.04 pTMscore:0.24 rmsd_to_input:42.06 elapsed time (s): 3697.8269181251526
+5tje_trim model_4_multimer_v2_seed_0 recycles:5 tol:3.32 mean_plddt:35.69 pTMscore:0.18 rmsd_to_input:37.96 elapsed time (s): 3688.7156035900116

@@ -1,0 +1,24 @@
+contigmap:
+  contigs:
+  - 70-120
+  inpaint_seq: null
+  inpaint_str: null
+  length: 70-120
+defaults:
+- base
+diffuser:
+  T: 200
+inference:
+  align_motif: false
+  ckpt_path: /projects/ml/RF2_allatom/lab_model_weights/aa_diffusion.pt
+  input_pdb: /home/lhtran/class/cheme_577/challenge_4/unrelated/W3AhNE_met_1.pdb
+  ligand: UNL
+  model_runner: NRBStyleSelfCond
+  num_designs: 30
+  output_prefix: /home/lhtran/class/cheme_577/challenge_4/unrelated/output/des_2
+  str_self_cond: true
+potentials:
+  guide_decay: cubic
+  guide_scale: 4
+  guiding_potentials:
+  - type:ligand_ncontacts,weight:1

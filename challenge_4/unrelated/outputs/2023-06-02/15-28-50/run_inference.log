@@ -1,0 +1,2 @@
+[2023-06-02 15:28:50,343][inference.model_runners][INFO] - Reading checkpoint from /home/ahern/projects/rf_diffusion/train_session2023-01-09_1673291857.7027779/models/BFF_10.pt
+[2023-06-02 15:28:59,149][inference.model_runners][INFO] - Loading checkpoint.
